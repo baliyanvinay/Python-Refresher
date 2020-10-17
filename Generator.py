@@ -32,3 +32,7 @@ while(choice == 'Y'):
 # Another way is to use it in a loop
 # for state_data in generator_object:
     # print(state_data)
+
+# Closing file object
+f.close()
+print('File Closed: ', f.closed)
