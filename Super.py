@@ -39,4 +39,6 @@ class MainFormContent(MainFormPage):
 content_link = MainFormContent()
 content_link.display_content()
 
-# Note in case of multiple inheritance the inheritance order resolution from right to left will work
+# Note in case of multiple inheritance, Super() will call methods via MRO(Method Resolution Order)
+# Double Underscore(or dunder) mro is a tupple attribute of class returning MRO
+print(MainFormContent.__mro__)
