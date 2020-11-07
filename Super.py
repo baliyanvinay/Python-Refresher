@@ -1,6 +1,7 @@
 # Super function in python allows to access parent class attributes
 # Super is extremely useful with OOP and inheritance and follow DRY principle
 
+# Parent or Super Class
 class BaseAccess(object):
     def __init__(self):
         self.root_access = True
@@ -9,6 +10,7 @@ class BaseAccess(object):
         print(f'Authorized with {some_value}')
 
 
+# Child class
 class MainFormPage(BaseAccess):
     def __init__(self):
         # This will call the BaseAccess constructor
