@@ -25,3 +25,16 @@ class MainFormPage(BaseAccess):
 page_link = MainFormPage()
 print(page_link.root_access)
 page_link.display_info()
+
+
+# Workflow of Super with muti-level inheritance
+class MainFormContent(MainFormPage):
+    def display_content(self):
+        print('Some static content')
+        super().display_info()
+
+
+content_link = MainFormContent()
+content_link.display_content()
+
+# Note in case of multiple inheritance the inheritance order resolution from right to left will work
