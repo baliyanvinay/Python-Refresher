@@ -13,9 +13,14 @@ class Player:  # considering this a Player model
     def display(self):
         return self.points
 
-    @classmethod
+    @classmethod  # this will enable the method to receive cls as first agruement rather than self
     def display_all(cls):
         return cls.total_players
+
+    @staticmethod  # static method does not take cls or self as first arguement
+    # this is useful if class method or object method does not fit the match
+    def display_points(*agrs):
+        return f"Just Printing {agrs}"
 
 
 # Player object
@@ -34,3 +39,6 @@ p1.total_players = 10
 print('Total Players via P1: ', p1.total_players)
 
 print('Total Players via Class: ', Player.total_players)
+
+# Example of just static method
+print(p1.display_points(15))
