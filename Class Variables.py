@@ -22,5 +22,15 @@ class Player:  # considering this a Player model
 p1 = Player(20)
 p2 = Player(10)
 
-print(p1.display())
-print(Player.display_all())
+print('Class Method via Class: ', Player.display_all())
+# One can also access class method via objects
+print('Class Method via object: ', p1.display_all())
+# Also objects can also access class variable
+print('Accessed via Objects: ', p1.total_players)
+
+# Also any additional attribute same name to class variable shall be created separetly
+# Look attribute lookup:  -->class object-->class-->base class
+p1.total_players = 10
+print('Total Players via P1: ', p1.total_players)
+
+print('Total Players via Class: ', Player.total_players)
