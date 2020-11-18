@@ -9,12 +9,9 @@ def an_agrs_func(*agrs):
 
 print(an_agrs_func(3,4,5))
 
-# kwargs returns a dict which can be used to create some objects
-class Developer:
-    def __init__(self, **kwargs):
-        for kwarg in kwargs:
-            self.kwarg=kwargs[kwarg] # assigning key as value
+# Use of Kwargs
+def display_details(**kwargs):
+    for key, val in kwargs.items(): # since this is a dictionary object
+        print(f'{key}: {val}')
 
-new_developer=Developer(name='Vinay',age=26, role='Backend Engineer')
-print(new_developer)
-
+display_details(name='Vinay', role='Backend Engineer')
