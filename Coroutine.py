@@ -25,3 +25,23 @@ t.send('George')
 t.send('Rosy')
 t.send('Smith')
 t.close() # When coroutine t is closed, statements under GeneratorExit block are executed.
+
+# Another good example of how one coroutine can be passed to another coroutine
+def stringParser():
+    while True:
+        name = yield
+        (fname, lname) = name.split()
+        f.send(fname)
+        f.send(lname)
+
+def stringLength():
+    while True:
+        string = yield
+        print("Length of '{}' : {}".format(string, len(string)))
+
+
+f = stringLength(); next(f)
+
+s = stringParser()
+next(s)
+s.send('Jack Black')
