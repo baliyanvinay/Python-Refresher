@@ -17,10 +17,9 @@ When an object is created in Python, it is assigned a type and an id. An object/
 >>> list_var += [17]
 >>> list_var
 [17, 10, 17]
->>> id(list_var)
+>>> id(list_var) # ID of the object didn't change.
 2289772854208
 ```
-ID of the object didn't change.
 
 ## 
 <b>Immutable objects in Python</b>
@@ -35,10 +34,9 @@ ID of the object didn't change.
 >>> tuple_var += (10,)
 >>> tuple_var
 (17,10)
->>> id(tuple_var)
+>>> id(tuple_var) # ID changes when made changes in object.
 1753153466880
 ```
-ID changes when made changes in object.
 
 ## 3. What is the difference between list and tuples in Python?
 
@@ -78,14 +76,14 @@ List over-allocates memory otherwise list.append would be an O(n) operation.
 [1,2]
 ```
 ### Reusablity
-Tuple literally assigns the same object to the new variable while list basically copies all the elements of the existing list, also the size of new list will not be same as old list. 
+Tuple literally assigns the same object to the new variable while list basically copies all the elements of the existing list.
 ```python
 >>> # List vs Tuples | Reused vs. Copied
 >>> old_list = [1,2]
 >>> old_list.append(3)
 >>> old_list
 [1, 2, 3]
->>> id(old_list)
+>>> id(old_list) 
 2594206915456
 >>> old_list.__sizeof__()
 88
@@ -94,9 +92,9 @@ Tuple literally assigns the same object to the new variable while list basically
 >>> new_list = list(old_list)
 >>> new_list
 [1, 2, 3]
->>> id(new_list)
+>>> id(new_list) # new id so new list is created
 2594207110976
->>> new_list.__sizeof__()
+>>> new_list.__sizeof__() # size is also not same as old_list
 64
 
 >>> Tuple Copy
@@ -106,9 +104,9 @@ Tuple literally assigns the same object to the new variable while list basically
 >>> old_tuple.__sizeof__()
 40
 >>> new_tuple = tuple(old_tuple)
->>> id(new_tuple)
+>>> id(new_tuple) # same id as old_tuple
 2594206778048
->>> new_tuple.__sizeof__()
+>>> new_tuple.__sizeof__() # also same size as old_tuple since it is refering to old_tuple
 40
 ```
 
