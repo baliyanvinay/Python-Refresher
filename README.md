@@ -112,3 +112,5 @@ Tuple literally assigns the same object to the new variable while list basically
 40
 ```
 
+### Performance-Speed
+Tuples and List takes almost same time in indexing, but for construction, tuple destroys list. See example, 'List vs Tuple'. 
