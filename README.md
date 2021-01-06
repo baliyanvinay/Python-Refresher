@@ -9,6 +9,11 @@ Everything from numbers, lists, strings, functions and classes are python object
 False
 >>> type(a)
 <class 'float'>
+>>> def func()
+....    pass
+>>> type(func)
+<class 'function'>
+>>> # like functions, classes are also objects of 'type' class
 ```
 Look at the below example
 ```python
