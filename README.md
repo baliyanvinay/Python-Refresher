@@ -20,6 +20,8 @@ When an object is created in Python, it is assigned a type and an id. An object/
 >>> id(list_var)
 2289772854208
 ```
+ID of the object didn't change.
+
 ## 
 <b>Immutable objects in Python</b>
 -- Numeric data types, strings, bytes, frozen sets, and tuples.
@@ -36,5 +38,6 @@ When an object is created in Python, it is assigned a type and an id. An object/
 >>> id(tuple_var)
 1753153466880
 ```
+ID changes when made changes in object.
 
 ## What is the difference between list and tuples in Python?
