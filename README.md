@@ -1,6 +1,20 @@
 # Python Interview Preparation
 
 ## 1. Explain 'Everything in Python is an object'.
+What's an object? An object in a object-oriented programming language is an entity that contains data along with some methods for operations related to that data. <br>
+Everything from numbers, lists, strings, functions and classes are python objects. 
+```python
+>>> a = 10.5
+>>> a.is_integer() # Float type has is_integer() method cause a is an object of float class
+False
+>>> type(a)
+<class 'float'>
+```
+Look at the below example
+```python
+>>> var = 'Tom' # Object 'Tom' is created in memory and name 'var' is binded to it. 
+>>> var = 'Harry' # Another object is created however note that name 'var' is now binded to 'Harry' but 'Tom' is still somewhere in memory and is unaffected.
+```
 
 ## 2. What is mutable and immutable objects/data types in Python?
 Mutation generally refers to 'change'. So when we say that an object is mutable or immutable we meant to say that the value of object can/cannot change. <br>
