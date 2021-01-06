@@ -52,27 +52,27 @@ ID changes when made changes in object.
 | Memory | Large-Extra than the element size | Fixed to element size |
 
 ### Memory Allocation of Tuple and List
-An empty tuple takes 24 bytes, with addition of 8 bytes for each integer element. Tuple does not allot any extra memory during construction because it will be immutable so does not have to worry about addition of elements. 
+Tuple does not allot any extra memory during construction because it will be immutable so does not have to worry about addition of elements. 
 ```python
 >>> tuple_var = tuple()
->>> tuple_var.__sizeof__()
+>>> tuple_var.__sizeof__() # take 24 bytes for empty tuple
 24
->>> tuple_var = (1,2)
+>>> tuple_var = (1,2) # additional 8 bytes for each integer element
 >>> tuple_var.__sizeof__()
 40
 ```
-In case of lists, an empty list takes 40 bytes and then addition of 8 bytes. However list over-allocates memory otherwise list.append would be an O(n) operation. 
+List over-allocates memory otherwise list.append would be an O(n) operation. 
 ```python
 >>> list_var = list()
->>> list_var.__sizeof__()
+>>> list_var.__sizeof__() # take 40 bytes for empty list
 40
 >>> list_var.append(1)
->>> list_var.__sizeof__()
+>>> list_var.__sizeof__() # append operation allots extra memory size considering future appends
 72
 >>> list_var
 [1]
 >>> list_var.append(2)
->>> list_var.__sizeof__()
+>>> list_var.__sizeof__() # size remains same since list has space available
 72
 >>> list_var
 [1,2]
