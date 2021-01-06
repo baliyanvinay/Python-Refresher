@@ -1,8 +1,8 @@
 # Python Interview Preparation
 
-## Explain 'Everything in Python is an object'.
+## 1. Explain 'Everything in Python is an object'.
 
-## What is mutable and immutable objects/data types in Python?
+## 2. What is mutable and immutable objects/data types in Python?
 Mutation generally refers to 'change'. So when we say that an object is mutable or immutable we meant to say that the value of object can/cannot change. <br>
 When an object is created in Python, it is assigned a type and an id. An object/data type is mutable if with the same id, the value of the object changes after the object is created. 
 ##
@@ -40,7 +40,7 @@ ID of the object didn't change.
 ```
 ID changes when made changes in object.
 
-## What is the difference between list and tuples in Python?
+## 3. What is the difference between list and tuples in Python?
 
 | Parameter | List | Tuples |
 | :-------------:|:-------------:| :-------------:| 
