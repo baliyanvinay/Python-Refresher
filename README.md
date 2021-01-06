@@ -41,3 +41,74 @@ ID of the object didn't change.
 ID changes when made changes in object.
 
 ## What is the difference between list and tuples in Python?
+
+| Parameter | List | Tuples |
+| :-------------:|:-------------:| :-------------:| 
+|  Syntax   | Square brackets or list keyword | Round brackets/parenthesis or tuple keyword |
+| Nature    | Mutable  | Immutable |
+| Item Assignment | Possible  | Not Possible |
+| Reusablity | Copied  | Not Copied |
+| Performance | Relatively slower  | Relatively faster |
+| Memory | Large-Extra than the element size | Fixed to element size |
+
+### Memory Allocation of Tuple and List
+An empty tuple takes 24 bytes, with addition of 8 bytes for each integer element. Tuple does not allot any extra memory during construction because it will be immutable so does not have to worry about addition of elements. 
+```python
+>>> tuple_var = tuple()
+>>> tuple_var.__sizeof__()
+24
+>>> tuple_var = (1,2)
+>>> tuple_var.__sizeof__()
+40
+```
+In case of lists, an empty list takes 40 bytes and then addition of 8 bytes. However list over-allocates memory otherwise list.append would be an O(n) operation. 
+```python
+>>> list_var = list()
+>>> list_var.__sizeof__()
+40
+>>> list_var.append(1)
+>>> list_var.__sizeof__()
+72
+>>> list_var
+[1]
+>>> list_var.append(2)
+>>> list_var.__sizeof__()
+72
+>>> list_var
+[1,2]
+```
+### Reusablity
+Tuple literally assigns the same object to the new variable while list basically copies all the elements of the existing list, also the size of new list will not be same as old list. 
+```python
+>>> # List vs Tuples | Reused vs. Copied
+>>> old_list = [1,2]
+>>> old_list.append(3)
+>>> old_list
+[1, 2, 3]
+>>> id(old_list)
+2594206915456
+>>> old_list.__sizeof__()
+88
+
+>>> # Copying list
+>>> new_list = list(old_list)
+>>> new_list
+[1, 2, 3]
+>>> id(new_list)
+2594207110976
+>>> new_list.__sizeof__()
+64
+
+>>> Tuple Copy
+>>> old_tuple = (1,2)
+>>> id(old_tuple)
+2594206778048
+>>> old_tuple.__sizeof__()
+40
+>>> new_tuple = tuple(old_tuple)
+>>> id(new_tuple)
+2594206778048
+>>> new_tuple.__sizeof__()
+40
+```
+
