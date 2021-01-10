@@ -131,3 +131,5 @@ Tuple literally assigns the same object to the new variable while list basically
 
 ### Performance-Speed
 Tuples and List takes almost same time in indexing, but for construction, tuple destroys list. See example, 'List vs Tuple'. 
+
+## 4. How is memory managed in Python?
