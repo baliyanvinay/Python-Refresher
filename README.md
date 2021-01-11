@@ -137,3 +137,4 @@ Unlike other programming languages, python stores references to an object after 
 The reference count 
 - increases if an object is assigned a new name or is placed in a container, like tuple or dictionary.
 - decreases when the object's reference goes out of scope or when name is assigned to another object. 
+Python's garbage collector handles the job of removing objects & a programmer need not to worry about allocating/de-allocating memory like it is done in C.
