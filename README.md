@@ -140,4 +140,15 @@ The reference count
 Python's garbage collector handles the job of removing objects & a programmer need not to worry about allocating/de-allocating memory like it is done in C.
 
 ## 5. Explain exception handling in Python.
+Exception handling is the way by which a programmer can control an error within the program without breaking out the flow of execution. 
+```python
+try:
+    # Part which might cause an error
+except TypeError:
+    # What happens when error occurs | In this case what happens what a TypeError occurs
+else:
+    # what happens if there is no exception
+finally:
+    # Executed after try and except| always executed
+```
 Examples :- TypeError, ValueError, ImportError, KeyError, IndexError, NameError, PermissionError, EOFError, ZeroDivisionError, StopIteration
