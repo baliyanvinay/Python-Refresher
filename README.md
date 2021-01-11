@@ -133,3 +133,7 @@ Tuple literally assigns the same object to the new variable while list basically
 Tuples and List takes almost same time in indexing, but for construction, tuple destroys list. See example, 'List vs Tuple'. 
 
 ## 4. How is memory managed in Python?
+Unlike other programming languages, python stores references to an object after it is created. For example, an integer object 17 might have two names(variables are called names in python) a and b. The memory manager in python keeps track of the reference count of each object, this would be 2 for object 17. Once the object reference count reaches 0, object is removed from memory. <br>
+The reference count 
+- increases if an object is assigned a new name or is placed in a container, like tuple or dictionary.
+- decreases when the object's reference goes out of scope or when name is assigned to another object. 
