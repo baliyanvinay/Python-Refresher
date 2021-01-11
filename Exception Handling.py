@@ -4,8 +4,9 @@ array_list = [1, 2, 3]  # with indexes 0,1,2
 try:
     print('In try block: accessing index 3')
     array_list[3] = 12
-except IndexError:
-    print('In except block: Error Occured')
+    array_list[1]/0
+except (IndexError, ZeroDivisionError) as exception:
+    print('In except block: ', exception)
     array_list.append(12)
 else:
     print('In else block: No error')
