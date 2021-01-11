@@ -147,8 +147,8 @@ try:
 except TypeError:
     # What happens when error occurs | In this case what happens what a TypeError occurs
 else:
-    # what happens if there is no exception
+    # what happens if there is no exception | Optional
 finally:
-    # Executed after try and except| always executed
+    # Executed after try and except| always executed | Optional
 ```
 Examples :- TypeError, ValueError, ImportError, KeyError, IndexError, NameError, PermissionError, EOFError, ZeroDivisionError, StopIteration
