@@ -152,3 +152,9 @@ finally:
     # Executed after try and except| always executed | Optional
 ```
 Examples :- TypeError, ValueError, ImportError, KeyError, IndexError, NameError, PermissionError, EOFError, ZeroDivisionError, StopIteration
+
+## Coding Question
+```python
+# Transpose a square matrix of n rows and columns
+# Write a function that will place even elements of an array at even indexes and odd at odd indexes. 
+```
