@@ -9,16 +9,6 @@ def transpose_matrix(input_matrix):
     return input_matrix
 
 
-# Transpose a square matrix of n by n
-sample_matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-sample_output = transpose_matrix(sample_matrix)
-print('Transpose of matrix : ', *sample_output, sep='\n')  # List unpacking
-
-
 def even_odd_locations(input_array):
     '''
     Write a function that will place even elements at even locations and odd at odd locations
@@ -38,6 +28,30 @@ def even_odd_locations(input_array):
     return output_array
 
 
+def isValidSubsequence(array, sequence):
+    for element in sequence:
+        if element not in array:
+            return False
+    return True
+
+
+# Transpose a square matrix of n by n
+sample_matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+sample_output = transpose_matrix(sample_matrix)
+print('Transpose of matrix : ', *sample_output, sep='\n')  # List unpacking
+
+
+# Odd Even Element Indexes
 sample_input = [1, 2, 3, 4, 5, 6]
 sample_output = even_odd_locations(sample_input)
 print('Odd Even Element-Index Probelm : ', sample_output)
+
+# Second array valid sequence of first array
+first_array = [5, 1, 22, 25, 6, -1, 8, 10]
+second_array = [1, 6, -1, 10, 10]
+print('Second Array sequence of First Array : ',
+      isValidSubsequence(first_array, second_array))
