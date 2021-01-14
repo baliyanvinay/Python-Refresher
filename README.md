@@ -160,6 +160,12 @@ def sum(a,b,/,c=10):
     return a+b+c
 sum(10,12,c=12)
 ```
+F String can also do operations
+```python
+a,b = 10, 12
+f"Sum of a and b is {a+b}"
+f"Value of c is {(c := a+b)}"
+```
 
 
 ## Coding Question
