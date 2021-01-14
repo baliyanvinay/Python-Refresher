@@ -153,6 +153,15 @@ finally:
 ```
 Examples :- TypeError, ValueError, ImportError, KeyError, IndexError, NameError, PermissionError, EOFError, ZeroDivisionError, StopIteration
 
+##  6. Explain some changes in Python 3.8
+Positional arguements representation
+```python
+def sum(a,b,/,c=10):
+    return a+b+c
+sum(10,12,c=12)
+```
+
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
