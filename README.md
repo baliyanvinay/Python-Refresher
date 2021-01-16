@@ -167,6 +167,7 @@ f"Sum of a and b is {a+b}"
 f"Value of c is {(c := a+b)}"
 ```
 
+## 7. Types of inheritance in Django
 
 ## Coding Question
 ```python
