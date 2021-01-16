@@ -201,9 +201,11 @@ Person() #Not callable|Can't create objects
 ```python
 class Student(models.Model):
     # Student Attributes
+    pass
 
 class Teacher(Student):
     # Teacher inherits the properties of Student
+    pass
 ```
 
 
