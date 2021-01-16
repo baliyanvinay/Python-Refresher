@@ -195,6 +195,16 @@ class Teacher(Person):
 Person() #Not callable|Can't create objects
 ```
 <b>Multi-table inheritance</b>
+1. Every model is a model in itself.
+2. One-to-One link is created b/w tables automatically.
+
+```python
+class Student(models.Model):
+    # Student Attributes
+
+class Teacher(Student):
+    # Teacher inherits the properties of Student
+```
 
 
 
