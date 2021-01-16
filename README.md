@@ -169,6 +169,8 @@ f"Value of c is {(c := a+b)}"
 
 ## 7. Types of inheritance in Django
 
+## 8. What is a manage.py file in Django? List some functions
+
 ## Coding Question
 ```python
 # Transpose a square matrix of n rows and columns
