@@ -177,9 +177,8 @@ There are three types of inheritance that Django supports
 1. Parent Class has attributes common for many child classes
 2. Parent Class is only used for inheritance, not saved in database
 3. In Parent's Meta class, 'abstract' is marked as True
-4. Inheriting Parent's Meta class does not make child class abstract, it has to be seperately defined in child classes. 
-5. Child class can inherit from many parent classes. 
-6. Parent class can't be used for creating objects
+4. Child class can inherit from many parent classes. 
+5. Parent class can't be used for creating objects
 
 ```python
 class Person(models.Model):
