@@ -168,6 +168,15 @@ f"Value of c is {(c := a+b)}"
 ```
 
 ## 7. Types of inheritance in Django
+There are three types of inheritance that Django supports
+- Abstract Base Class
+- Multi Table Inheritance
+- Proxy Models
+
+<b>Abstract Base Class</b><br>
+1. Parent Class has attributes common for many child classes
+2. Parent Class is only used for inheritance, not saved in database
+3. In Parent's Meta class, 'abstract' is marked as True
 
 ## 8. What is a manage.py file in Django? List some functions
 
