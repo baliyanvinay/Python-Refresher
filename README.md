@@ -181,6 +181,18 @@ There are three types of inheritance that Django supports
 5. Child class can inherit from many parent classes. 
 6. Parent class can't be used for creating objects
 
+```python
+class Person(models.Model):
+    # common fields
+    class Meta:
+        abstract = True
+
+class Student(Person):
+    pass
+
+Person() #Not callable|Can't create objects
+```
+
 ## 8. What is a manage.py file in Django? List some functions
 
 ## Coding Question
