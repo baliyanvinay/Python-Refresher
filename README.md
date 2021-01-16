@@ -207,8 +207,23 @@ class Teacher(Student):
     # Teacher inherits the properties of Student
     pass
 ```
+<b>Proxy Models</b>
+1. Proxy(something authorized to act on behalf of another) models altering some properties of base model like ordering or adding new method
+2. Changes the behavior of original model
+3. Proxy model will also operate on the base model
 
+```python
+class Person(models.Model):
+    pass
 
+class MyPerson(Person):
+    class Meta:
+        proxy = True
+        ordering = ["last_name"]
+
+    def do_something(self):
+        pass
+```
 
 ## 8. What is a manage.py file in Django? List some functions
 
