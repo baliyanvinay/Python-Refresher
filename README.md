@@ -228,7 +228,7 @@ class MyPerson(Person):
 ## 8. What is a manage.py file in Django? List some commands
 Manage.py file is automatically created when a new project is created & is used for administrative tasks. <br>
 It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project settings(which db, middleware)
-| Command | Function | Syntax |
+| Command | Function | Example |
 | :-------------:|:-------------:| :-------------:| 
 |  runserver   | Starts a lightweight dev server on local machine on port 8000 and ip 127.0.0.1. Automatically reloads code on each HTTP request. Can provide local machine ip to make project accessible to other users. | python manage.py runserver 128.12.14.14 |
 
