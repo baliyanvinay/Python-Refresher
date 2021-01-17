@@ -230,7 +230,7 @@ Manage.py file is automatically created when a new project is created & is used 
 It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project settings(which db, middleware)
 | Command | Function | Example |
 | :-------------:|:-------------:| :-------------:| 
-|  runserver   | Starts a lightweight dev server on local machine on port 8000 and ip 127.0.0.1. Automatically reloads code on each HTTP request. Can provide local machine ip to make project accessible to other users. | python manage.py runserver 128.12.14.14 |
+|  runserver   | Starts a lightweight dev server on local machine on port 8000 and ip 127.0.0.1. Automatically reloads code on each HTTP request. Can provide local machine ip to make project accessible to other users. | ``` python manage.py runserver 192.168.1.110:8000 ``` |
 
 2. <b>check: </b>Check apps for common problems. 
 ```bash
