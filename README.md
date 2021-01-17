@@ -229,6 +229,16 @@ class MyPerson(Person):
 Manage.py file is automatically created when a new project is created & is used for administrative tasks. <br>
 It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project settings(which db, middleware)
 1. <b>runserver: </b> Starts a lightweight dev server on local machine on port 8000 and ip 127.0.0.1. Automatically reloads code on each HTTP request. Can provide local machine ip to make project accessible to other users. 
+2. <b>check: </b>Check apps for common problems. 
+```python
+>>> python manage.py check appname
+```
+3. <b>dumpdata: </b>Returns all data within all apps on shell. Can be exported to a json, also can be exported for an app, all tables or a single table. 
+```bash
+>>> python manage.py dumpdata appname # dumps data on shell
+>>> python manage.py dumpdata appname > appname.json # saves data into json
+>>> python manage.py dumpdata appname.model_class_name # dumps data for one table 
+```
 
 ## Coding Question
 ```python
