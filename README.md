@@ -228,7 +228,10 @@ class MyPerson(Person):
 ## 8. What is a manage.py file in Django? List some commands
 Manage.py file is automatically created when a new project is created & is used for administrative tasks. <br>
 It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project settings(which db, middleware)
-1. <b>runserver: </b> Starts a lightweight dev server on local machine on port 8000 and ip 127.0.0.1. Automatically reloads code on each HTTP request. Can provide local machine ip to make project accessible to other users. 
+| Command | Function | Syntax |
+| :-------------:|:-------------:| :-------------:| 
+|  runserver   | Starts a lightweight dev server on local machine on port 8000 and ip 127.0.0.1. Automatically reloads code on each HTTP request. Can provide local machine ip to make project accessible to other users. | python manage.py runserver 128.12.14.14 |
+
 2. <b>check: </b>Check apps for common problems. 
 ```bash
 $ python manage.py check appname
@@ -244,6 +247,9 @@ $ python manage.py dumpdata appname.model_class_name # dumps data for one table
 $ python manage.py loaddata fixture_name.json 
 ```
 5. <b>flush: <b>Irreversibly destroy data currently in DB & return each table to an empty state.
+6. <b>makemigrations: </b>
+7. <b>migrate: </b>
+Some more commands []
 
 ## 9. What is a Fixture?
 
