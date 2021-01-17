@@ -208,7 +208,7 @@ class Teacher(Student):
     pass
 ```
 <b>Proxy Models</b>
-1. Proxy(something authorized to act on behalf of another) models altering some properties of base model like ordering or adding new method
+1. Proxy(<i>something authorized to act on behalf of another</i>) models altering some properties of base model like ordering or adding new method
 2. Changes the behavior of original model, won't be saved in DB
 3. Proxy model will also operate on the base model
 
