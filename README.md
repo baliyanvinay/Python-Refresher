@@ -226,6 +226,8 @@ class MyPerson(Person):
 ```
 
 ## 8. What is a manage.py file in Django? List some functions
+Manage.py file is automatically created when a new project is created & is used for administrative tasks. <br>
+It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project settings(which db, middleware)
 
 ## Coding Question
 ```python
