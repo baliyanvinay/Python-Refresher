@@ -232,7 +232,7 @@ It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project se
 | :-------------:|:-------------:| :-------------:| 
 |  runserver   | Starts a lightweight dev server on local machine on port 8000 and ip 127.0.0.1. Automatically reloads code on each HTTP request. Can provide local machine ip to make project accessible to other users. | ``` $ python manage.py runserver 192.168.1.110:8000 ``` |
 |  check   | Check apps for common problems | ``` $ python manage.py check appname ``` |
-|  dumpdata   | Returns all data within all apps on shell. Can be exported to a json, also can be exported for an app, all tables or a single table.  | ``` $ python manage.py dumpdata appname # dumps data on shell && python manage.py dumpdata appname > appname.json # saves data into json && python manage.py dumpdata appname.model_class_name # dumps data for one table ``` |
+|  dumpdata   | Returns all data within all apps on shell. Can be exported to a json, also can be exported for an app, all tables or a single table.  | ``` $ python manage.py dumpdata appname && python manage.py dumpdata appname > appname.json && python manage.py dumpdata appname.model_class_name ``` |
 | loaddata | Loads named fixtures into DB | ```$ python manage.py loaddata fixture_name.json``` |
 | flush | Irreversibly destroy data currently in DB & return each table to an empty state | ``` $ python manage.py flush ``` |
 | makemigrations | | |
