@@ -239,6 +239,9 @@ It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project se
 >>> python manage.py dumpdata appname > appname.json # saves data into json
 >>> python manage.py dumpdata appname.model_class_name # dumps data for one table 
 ```
+4. <b>loaddata: </b>
+5. <b>flush: <b>Irreversibly destroy data currently in DB & return each table to an empty state.
+
 
 ## Coding Question
 ```python
