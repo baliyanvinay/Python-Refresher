@@ -235,7 +235,7 @@ It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project se
 |  dumpdata   | Returns all data within all apps on shell. Can be exported to a json, also can be exported for an app, all tables or a single table.  | ``` $ python manage.py dumpdata appname && python manage.py dumpdata appname > appname.json && python manage.py dumpdata appname.model_class_name ``` |
 | loaddata | Loads named fixtures into DB | ```$ python manage.py loaddata fixture_name.json``` |
 | flush | Irreversibly destroy data currently in DB & return each table to an empty state | ``` $ python manage.py flush ``` |
-| makemigrations | | |
+| makemigrations | Migrations are kind of a version control system for DB schema. makemigrations pack up the changes detected in the models into migration files(similar to a commit). </br>New migrations are compared with the old migrations before creation. | ```python $ python manage.py makemigrations --name changed_my_model appname1, appname2 ``` |
 | migrate | | |
 
 ## 9. What is a Fixture?
