@@ -239,6 +239,7 @@ It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project se
 | migrate | Synchronizes the database state with the current set of models and migrations | ``` $ python manage.py migrate changed_my_model --fake ```|
 
 ## 9. What is a Fixture?
+Fixtures are initial data for your database which can be used with <i>manage.py loaddata</i> command. Django will look for a fixtures folder in your app or the list of directories provided in the FIXTURE_DIRS in settings, and use its content instead.
 
 ## 10. Explain Migration in Python Django.
 
