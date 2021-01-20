@@ -236,9 +236,11 @@ It is more like django-admin but also sets DJANGO_SETTINGS_MODULE for project se
 | loaddata | Loads named fixtures into DB | ```$ python manage.py loaddata fixture_name.json``` |
 | flush | Irreversibly destroy data currently in DB & return each table to an empty state | ``` $ python manage.py flush ``` |
 | makemigrations | Migrations are kind of a version control system for DB schema. makemigrations pack up the changes detected in the models into migration files(similar to a commit). </br>New migrations are compared with the old migrations before creation. | ```python $ python manage.py makemigrations --name changed_my_model appname1, appname2 ``` |
-| migrate | | |
+| migrate | Synchronizes the database state with the current set of models and migrations | ``` $ python manage.py migrate changed_my_model --fake ```|
 
 ## 9. What is a Fixture?
+
+## 10. Explain Migration in Python Django.
 
 ## Coding Question
 ```python
