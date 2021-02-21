@@ -35,6 +35,22 @@ def isValidSubsequence(array, sequence):
     return True
 
 
+# From a given list, remove the least occurred item in m times loop
+from collections import Counter
+
+def remove_items(array, m):
+    for _ in range(m):
+        elements_dict = Counter(array)
+        least_common_element = elements_dict.most_common()[-1][0]
+        array.remove(least_common_element)
+    return len(set(array))
+
+############################################################################################################################
+##                                                                                                                        ##
+##                                        OUTPUT DOWN BELOW                                                               ##
+##                                                                                                                        ##
+############################################################################################################################
+
 # Transpose a square matrix of n by n
 sample_matrix = [
     [1, 2, 3],
@@ -55,3 +71,7 @@ first_array = [5, 1, 22, 25, 6, -1, 8, 10]
 second_array = [1, 6, -1, 10, 10]
 print('Second Array sequence of First Array : ',
       isValidSubsequence(first_array, second_array))
+
+# Remove least occurance of items in array
+sample_array, sample_m = [1,2,3,1,2,2], 3
+print(f'{remove_items(sample_array, sample_m)} unique item(s) in array afer {sample_m} removal operations.')
