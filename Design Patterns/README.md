@@ -18,6 +18,6 @@ There are 23 design patterns which can be classified in three categories: Creati
 ## Singleton Design Pattern
 
 Ref: 
-https://refactoring.guru/design-patterns
-[Ariel Ortiz - Design Patterns in Python for the Untrained Eye - PyCon 2019](https://www.youtube.com/watch?v=o1FZ_Bd4DSM)
-[Design Patterns in Python for the Untrained Eye](http://34.212.143.74/s201911/pycon2019/docs/design_patterns.html)
+https://refactoring.guru/design-patterns <br>
+[Ariel Ortiz - Design Patterns in Python for the Untrained Eye - PyCon 2019](https://www.youtube.com/watch?v=o1FZ_Bd4DSM) <br>
+[Design Patterns in Python for the Untrained Eye](http://34.212.143.74/s201911/pycon2019/docs/design_patterns.html) <br>
