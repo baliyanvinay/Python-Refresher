@@ -22,6 +22,12 @@ A Singleton(from a singleton set in maths) design restricts the instantiation of
 - Database driver class with just one driver required
 - Logger class controlling the logging of whole application
 
+## Template Method Design Pattern
+In template method design pattern, the skelton of an algorithm is defined in a superclass but subclasses can override steps of the algorithm without changing the structure. <br>
+### Example
+- File Reading algorithm with abstract read_file method for different file types.
+- House building algorithm with abstract methods to result in different looking houses. 
+
 Ref: 
 https://refactoring.guru/design-patterns <br>
 [Ariel Ortiz - Design Patterns in Python for the Untrained Eye - PyCon 2019](https://www.youtube.com/watch?v=o1FZ_Bd4DSM) <br>
