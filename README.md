@@ -21,3 +21,24 @@ list(enumerate(seasons, start=1))
 for season in enumerate(seasons, start=1):
   print(season)
 ```
+
+## What is it? It is None.
+Like other python data types, None is an object of NoneType class which represents the absence of a value, as when default arguments are not passed to a function. 
+```python
+>>> type(10)
+>>> <class 'int'>
+>>> type(True)
+>>> <class 'bool'>
+>>> type(None)
+>>> <class 'NoneType'>
+```
+```python
+if not None:
+  print('Truth value of None is False')
+  
+# func default return is None object
+def func():
+  print('Something')
+obj = func() # prints Something
+print(obj)  # prints None
+```

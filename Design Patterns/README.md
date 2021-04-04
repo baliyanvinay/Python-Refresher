@@ -16,6 +16,17 @@ There are 23 design patterns which can be classified in three categories: Creati
 - <b>Behavioral Patterns</b> take care of effective communication and the assignment of responsibilities between objects.
 
 ## Singleton Design Pattern
+A Singleton(from a singleton set in maths) design restricts the instantiation of a class to one "single" instance. This is useful when exactly one object is needed to coordinate actions across the system. <br>
+### Examples
+- Government class with just one object for a country
+- Database driver class with just one driver required
+- Logger class controlling the logging of whole application
+
+## Template Method Design Pattern
+In template method design pattern, the skelton of an algorithm is defined in a superclass but subclasses can override steps of the algorithm without changing the structure. <br>
+### Example
+- File Reading algorithm with abstract read_file method for different file types.
+- House building algorithm with abstract methods to result in different looking houses. 
 
 Ref: 
 https://refactoring.guru/design-patterns <br>
