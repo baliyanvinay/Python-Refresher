@@ -3,10 +3,10 @@
 
 class DBConnect(object):
     def __init__(self, dbname):
-        self.dbname=dbname
+        self.dbname = dbname
 
     def __enter__(self):
-        self.dbConnection=connect(self.dbname)
+        self.dbConnection = connect(self.dbname)
         return self.dbConnection
     
     def __exit__(self):
